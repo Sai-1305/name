@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Names</title>
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+<body>
+    <div class="container-fluid" id="full">
+        <h2>Check the name</h2>
+        <form>
+            <div class="container-fluid">
+                <form id="inner_form">
+                    <input id="box" type="text" required placeholder="Type here..." onkeydown="return /[a-z]/i.test(event.key)"><br>
+                    <p>
+                        <input type="reset" value="Reset" id="resetButton" onclick="resetField()"/>
+                        <input type="button" value="Submit" id="submitButton" onclick="submitName()"/>
+                    </p>
+                </form>
+                <p id="clear">
+                    Click reset to clear the field.
+                </p>
+            </div>
+        </form>
+        <p id="msg"></p>
+        <p id="suggestion"></p>
+    </div>
+<script src="./scripts/letterValues.js"></script>
+<script src="./scripts/script.js"></script>
+</body>
+</html>
